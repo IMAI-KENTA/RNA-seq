@@ -1,1 +1,7 @@
-# RNA-seq
+# RNA-seq pipeline
+RNA-seqによって得られたSRAファイルからデータ解析を行うパイプラインです。
+
+fastq-dump→マッピング→featureCountsの作業を行うパイプライン（SHIROKANE_pipeline）と、
+SHIROKANE_pipelineで得られるカウント数のデータを用いて発現変動遺伝子特定を行うRのパイプライン（R_pipeline）の２種類のサブフォルダがありますので、これらをこの順に実行してください。
+
+SHIROKANE_pipelineはスパコンSHIROKANE上で、R_pipelineはローカルのRStudio上で実行することを想定しています。
